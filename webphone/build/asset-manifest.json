@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "./static/css/main.1a8922dc.css",
+    "main.js": "./static/js/main.7f9b73a3.js",
+    "static/js/787.4621a599.chunk.js": "./static/js/787.4621a599.chunk.js",
+    "static/js/libthemis.wasm": "./static/js/libthemis.wasm",
+    "static/media/phone-message.png": "./static/media/phone-message.e795af7b598146a8ea56.png",
+    "index.html": "./index.html",
+    "main.1a8922dc.css.map": "./static/css/main.1a8922dc.css.map",
+    "main.7f9b73a3.js.map": "./static/js/main.7f9b73a3.js.map",
+    "787.4621a599.chunk.js.map": "./static/js/787.4621a599.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a8922dc.css",
+    "static/js/main.7f9b73a3.js"
+  ]
+}

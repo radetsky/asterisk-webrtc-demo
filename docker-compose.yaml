@@ -1,0 +1,38 @@
+version: "3.1"
+
+services:
+  asterisk:
+    build:
+      context: ./asterisk
+      dockerfile: Dockerfile
+    container_name: asterisk
+    restart: unless-stopped
+    privileged: true
+    stdin_open: true
+    environment:
+      - TZ=Europe/Kiev
+    volumes:
+      - ./asterisk/astcfg:/etc/asterisk
+    ports:
+      - 5060:5060/udp
+      - 10000-10100:10000-10100/udp
+      - 8089:8089/tcp
+      - 8088:8088/tcp
+    entrypoint: /docker-entrypoint.sh
+
+  webphone:
+    build:
+      context: ./webphone
+      dockerfile: Dockerfile
+    container_name: webphone
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    environment:
+      - TZ=Europe/Kiev
+    ports:
+      - 8080:8080
+
+networks:
+  default:
+    driver: bridge
