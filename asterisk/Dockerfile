@@ -11,6 +11,9 @@ RUN cd /usr/src && tar zxvf ./asterisk-20.5.2.tar.gz
 RUN cd /usr/src/asterisk-20.5.2 && ./contrib/scripts/get_mp3_source.sh
 RUN cd /usr/src/asterisk-20.5.2 && ./configure --prefix=/ --enable-dev-mode --with-crypto --with-postgres --with-spandsp --with-jansson-bundled --with-opus && make menuselect.makeopts && ./menuselect/menuselect --enable codec_opus && make && make install && make basic-pbx
 
+# This is a hack to get the static-http directory to be in the right place
+RUN rm -rf /var/lib/asterisk/static-http && ln -s /etc/asterisk/static-http /var/lib/asterisk/static-http
+
 EXPOSE 5060/udp
 ADD docker-entrypoint.sh /docker-entrypoint.sh
 

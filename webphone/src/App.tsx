@@ -8,7 +8,7 @@ const defaultConfiguration = {
     sockets: [],
     uri: 'sip:webrtc_client@localhost',
     password: 'webrtc_client',
-    wss: 'ws://localhost:8088/ws',
+    wss: 'wss://localhost:8089/ws',
     hostname: 'localhost'
 };
 

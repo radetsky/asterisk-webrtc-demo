@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.1a8922dc.css",
-    "main.js": "./static/js/main.7f9b73a3.js",
-    "static/js/787.4621a599.chunk.js": "./static/js/787.4621a599.chunk.js",
-    "static/js/libthemis.wasm": "./static/js/libthemis.wasm",
-    "static/media/phone-message.png": "./static/media/phone-message.e795af7b598146a8ea56.png",
+    "main.css": "./static/css/main.8ae2b13c.css",
+    "main.js": "./static/js/main.4aa0cd05.js",
+    "static/js/453.6ec12bac.chunk.js": "./static/js/453.6ec12bac.chunk.js",
     "index.html": "./index.html",
-    "main.1a8922dc.css.map": "./static/css/main.1a8922dc.css.map",
-    "main.7f9b73a3.js.map": "./static/js/main.7f9b73a3.js.map",
-    "787.4621a599.chunk.js.map": "./static/js/787.4621a599.chunk.js.map"
+    "static/media/chevron-down.svg": "./static/media/chevron-down.0049deca40becc016707f0d23e7e39c4.svg",
+    "main.8ae2b13c.css.map": "./static/css/main.8ae2b13c.css.map",
+    "main.4aa0cd05.js.map": "./static/js/main.4aa0cd05.js.map",
+    "453.6ec12bac.chunk.js.map": "./static/js/453.6ec12bac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a8922dc.css",
-    "static/js/main.7f9b73a3.js"
+    "static/css/main.8ae2b13c.css",
+    "static/js/main.4aa0cd05.js"
   ]
 }

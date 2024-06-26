@@ -30,6 +30,8 @@ services:
     tty: true
     environment:
       - TZ=Europe/Kiev
+    volumes:
+      - ./asterisk/astcfg/static-http:/react-docker-example/build
     ports:
       - 8080:8080
 

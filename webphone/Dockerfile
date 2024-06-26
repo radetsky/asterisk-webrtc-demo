@@ -11,12 +11,15 @@ COPY package.json package-lock.json tsconfig.json /react-docker-example/
 RUN npm install
 
 # Copy the rest of the application code
-COPY build/ /react-docker-example/build
+# COPY build/ /react-docker-example/build
 COPY public/ /react-docker-example/public
 COPY src/ /react-docker-example/src
 
 # Expose the application port (optional)
 EXPOSE 8080
+
+# Build the application for production
+#RUN npm run build
 
 # Start the application
 CMD ["npm", "start"]
